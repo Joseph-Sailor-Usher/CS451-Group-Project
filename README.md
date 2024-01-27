@@ -1,26 +1,21 @@
-# Commerce Bank UMKC Project: DAP Program - Spring 2024
+# CCS451 Group Project: Commerce Bank
 
 ## 📈 Overview
-Welcome to our repository for the Commerce Bank UMKC Project, a part of the DAP Program for Spring 2024. Our ambitious goal is to develop a full-stack web application focusing on financial functionalities, user accessibility, and robust security.
+Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal is to develop a full-stack web application focusing on financial functionalities, user accessibility, and robust security.
 
 ## 👥 Team Members
-- `[Your Name]`
-- `[Team Member 2]`
-- `[Team Member 3]`
-- ... *(add more as needed)*
+- Kevin Membreno
+- Meghan Satterley
+- Joseph Sailor Usher
 
 ## 🌟 Project Description
 ### Objective
 - Develop a full-stack web application emphasizing budget tracking or payments with a robust user registration/login system.
 
 ### 🛠️ Tech Stack
-- **Web Application:** Preferably .Net C# or Java *(No CMS like WordPress)*.
+- **Web Application:** .Net C# and Bootstrap.
 - **Database:** SQL Server 2012 or above.
-- **Unit Testing:** At least 10% Code Coverage, xUnit recommended for .Net.
-
-## 💻 Front-End Requirements
-- Utilize at least one CSS Framework, such as Bootstrap.
-- Ensure the framework/library is integrated into the project.
+- **Unit Testing:** At least 10% Code Coverage, xUnit
 
 ## 🎨 User Experience
 - Design must be accessible to all users, regardless of technical knowledge.
@@ -28,9 +23,14 @@ Welcome to our repository for the Commerce Bank UMKC Project, a part of the DAP 
 - Careful consideration of negative space.
 
 ## 📃 Application Essentials
-- **Core Pages:** Login & Register, Home/Dashboard, User Profile, Settings, plus a minimum of two additional pages.
+**Core Pages:**
+- Login & Register
+- Home/Dashboard
+- User Profile
+- Settings
+- plus a minimum of two additional pages
 
-## 🚀 Stretch Goals
+## Stretch Goals
 *(Aim to complete at least two)*
 - Deploy on a Windows server/cloud instance.
 - Environment-specific configurations.
