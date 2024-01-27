@@ -4,6 +4,7 @@
 Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal is to develop a full-stack web application focusing on financial functionalities, user accessibility, and robust security.
 
 ## 👥 Team Members
+- Julian Davis
 - Kevin Membreno
 - Meghan Satterley
 - Joseph Sailor Usher
