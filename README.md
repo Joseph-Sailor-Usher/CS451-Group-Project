@@ -30,7 +30,7 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 - Settings
 - plus a minimum of two additional pages
 
-## Stretch Goals
+## 🚀 Stretch Goals
 *(Aim to complete at least two)*
 - Deploy on a Windows server/cloud instance.
 - Environment-specific configurations.
