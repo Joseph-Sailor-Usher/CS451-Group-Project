@@ -11,7 +11,7 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 
 ## 🌟 Project Description
 ### Objective
-- Develop a full-stack web application emphasizing budget tracking or payments with a robust user registration/login system.
+- Develop a full-stack web application emphasizing budget tracking with a robust user registration/login system.
 
 ### 🛠️ Tech Stack
 - **Web Application:** .Net C# and Bootstrap.
