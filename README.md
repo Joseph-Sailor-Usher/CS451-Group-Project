@@ -38,9 +38,9 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 - Backend interactions via a Web API layer.
 - Implement open-source reporting tools for data visualization.
 - Pull requests and code reviews by team members.
-- Security scans and resolution of critical issues.
+**- Security scans and resolution of critical issues.**
 - Accessibility audit and rectification.
-- Session management for user re-login after closing the browser.
+**- Session management for user re-login after closing the browser.**
 - User support for username/password recovery.
 
 ## 📅 Mid Semester Check-In
