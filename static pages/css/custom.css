@@ -1,0 +1,10 @@
+/* body{
+    background-image: url('../green_circles.png');
+    background-repeat: no-repeat;
+} */
+
+.bg-primary {
+  background-color: #ffcd00;
+  background-image: linear-gradient(315deg, #ffcd00 0%, #005238 74%);
+
+}
