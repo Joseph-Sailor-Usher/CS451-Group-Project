@@ -42,6 +42,8 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 - Accessibility audit and rectification.
 - **Session management for user re-login after closing the browser.**
 - User support for username/password recovery.
+![IMG_2727](https://github.com/Joseph-Sailor-Usher/CS451-Group-Project/assets/83984148/a0eff470-a1d1-4099-a328-b8da1ca5955d)
+
 
 ## 📅 Mid Semester Check-In
 - **Feedback Sessions:** Engage in one-on-one feedback sessions.
