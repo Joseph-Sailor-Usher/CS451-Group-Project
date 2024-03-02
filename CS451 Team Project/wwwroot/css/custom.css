@@ -39,10 +39,3 @@
      .bd-mode-toggle .dropdown-menu .active .bi {
           display: block !important;
      }
-
-  .img-fit {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  
