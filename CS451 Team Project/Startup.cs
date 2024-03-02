@@ -30,7 +30,7 @@ namespace CS451_Team_Project
             options.Conventions.AddPageRoute("/Dashboard", "Pages");
         });
 
-        services.AddDbContext<AppDbContext>(options => options.npgsql(Configuration.GetConnectionString("DefaultConnection")));
+        services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
     }
 
     public void Configure(IApplicationBuilder app)
