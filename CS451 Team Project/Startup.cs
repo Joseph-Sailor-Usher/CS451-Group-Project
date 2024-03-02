@@ -31,6 +31,7 @@ namespace CS451_Team_Project
         });
 
         services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
     }
 
     public void Configure(IApplicationBuilder app)
