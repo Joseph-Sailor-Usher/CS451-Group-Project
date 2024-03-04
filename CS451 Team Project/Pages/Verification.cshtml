@@ -1,7 +1,9 @@
 ﻿@page
+@using CS451_Team_Project.Models
 @model VerificationModel
 @{
     Layout = null;
+    Model.OnGet(HttpContext.RequestServices.GetService(typeof(AppDbContext)) as AppDbContext, HttpContext.Request.Query["email"]);
 }
 <head>
     <meta charset="utf-8">
@@ -30,44 +32,37 @@
                     
                 </p>
 
-                <p>
-                    <img src="@Model.QrCodeUrl" />
-
-                <p>
-                    Canit use the barcode?
-                    <br />
-                    You can use this secret key instead: @Model.ManualEntryCode
-                </p>
-
-                </p>
-
-                @if (string.IsNullOrEmpty(Model.QrCodeUrl))
+                @if (string.IsNullOrEmpty(@Model.QrCodeUrl))
                 {
-                    <!--
-                    <form method-"post">
-
-                    
-                         <button type="submit">Register</button>
-                    </form>
-                    -->
+                   <p>Error!</p>
                 }
                 else
                 {
+                    <p>
+                         <img src="@Model.QrCodeUrl" />
+                         <p>
+                             Canit use the barcode?
+                             <br />
+                             You can use this secret key instead: @Model.ManualEntryCode
+                         </p>
+                    </p>
 
                 }
-                <p>
-                    Please enter the code in the field below.
-                </p>
 
-                <div class="row mt-4 pt-2">
-                    <div class="col">
-                        <input type="text" class="form-control form-control-lg text-center py-4" maxlength="6" autofocus="">
+               <form method="post">
+                    <p>Please enter the code in the field below.</p>
+
+                    <div class="row mt-4 pt-2">
+                         <div class="col">
+                              <input asp-for="Input.Code" type="text" class="form-control form-control-lg text-center py-4" maxlength="6" autofocus="" name="Code" required>
+                         </div>
                     </div>
-                </div>
 
-                <a href="#!" class="btn btn-purple btn-lg w-100 hover-lift-light mt-4">
-                    Verify my account
-                </a>
+                    <button type="submit" class="btn btn-purple btn-lg w-100 hover-lift-light mt-4">
+                         Verify My Account
+                    </button>
+               </form>
+
             </div>
         </div>
 

@@ -17,7 +17,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-      <a class="navbar-brand" href="#">Finaces are cool! <i class="bi-emoji-sunglasses"></i></a>
+      <a class="navbar-brand" href="#">Finances are cool! <i class="bi-emoji-sunglasses"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,8 +25,6 @@
           <ul class="navbar-nav">
               <li class="nav-item">
                         <a class="nav-link" asp-page="Dashboard"><i class="bi-compass"></i> Dashboard</a>
-                    </li>
-
               </li>
 
             <li class="nav-item">
@@ -45,7 +43,7 @@
                 <img src="ExampleProfile.png" alt="Avatar" width="32" height="32" class="rounded-circle">
             </a>
             <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" asp-page="FileUpload">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Settings</a></li>
                 <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" asp-page="Register">Login/Register</a></li>
@@ -134,14 +132,16 @@
     <br/>
     <div class="d-flex align-items-center py-4 ">
         <main class="form-signin mx-auto col-8">
-            <form class="needs-validation" action="dashboard.html" method="get" novalidate>
              <h1 class="h3 mb-3 fw-normal">
               Register
              </h1>
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
              <div class="row g-3">
                 <div class="col-sm-6">
                     <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <input asp-for="Input.FirstName" class="form-control" aria-required="true" placeholder="" />
+                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
                     <div class="invalid-feedback">
                         Valid first name is required
                     </div>
@@ -149,7 +149,8 @@
 
                 <div class="col-sm-6">
                     <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <input asp-for="Input.LastName" class="form-control" aria-required="true" placeholder="" />
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
                     <div class="invalid-feedback">
                         Valid last name is required
                     </div>
@@ -157,42 +158,43 @@
 
                 <div class="col-12">
                     <label for="username" class="form-label">Username</label>
-                    <div class="input-group has-validation">
-                        <input type="text" class="form-control" id="username" placeholder="Username"
-                        required>
+                        <input asp-for="Input.UserName" class="form-control" aria-required="true" placeholder="" />
+                        <span asp-validation-for="Input.UserName" class="text-danger"></span>
                         <div class="invalid-feedback">
                             Your username is required
-                        </div>
-                    </div>
-                </div>
+                        </div> 
 
+                </div>
 
                 <div class="col-12">
                     <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="name@example.com" required>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
                     <div class="invalid-feedback">
                         Please enter a valid email
                     </div>
                 </div>
+
                 <div class="col-12">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
                     <div class="invalid-feedback">
                         Please enter a valid Password
                     </div>
                 </div>
+
                 <div class="col-12">
                     <label for="password" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                     <div class="invalid-feedback">
                         Please enter a valid Password
                     </div>
                 </div>
-                <div class="col-sm-6 py-2 mx-auto">
-                    <button class="btn btn-primary w-100" type="submit">
-                        Sign in
-                    </button>
 
+                <div class="col-sm-6 py-2 mx-auto">
+                   <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Sign In</button>
                 </div>
                 
             </div>
