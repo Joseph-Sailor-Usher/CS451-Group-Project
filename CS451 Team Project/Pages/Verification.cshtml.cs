@@ -32,6 +32,7 @@ namespace CS451_Team_Project.Pages
             {
                 // Handle the case where the email is not provided in the URL
                 // You may want to redirect to an error page or show a message
+                // someone else do this -KM
             }
 
             var user = db.Users.FirstOrDefault(u => u.Email == email);
@@ -57,8 +58,8 @@ namespace CS451_Team_Project.Pages
                 TwoFactorAuthenticator tfa = new TwoFactorAuthenticator();
                 SetupCode setupInfo = tfa.GenerateSetupCode("Test Two Factor", user.Email, user.TwoFactorKey, false, 3);
 
-                QrCodeUrl = setupInfo.QrCodeSetupImageUrl;
-                ManualEntryCode = setupInfo.ManualEntryKey;
+                //QrCodeUrl = setupInfo.QrCodeSetupImageUrl;
+                //ManualEntryCode = setupInfo.ManualEntryKey;
             }
             else
             {

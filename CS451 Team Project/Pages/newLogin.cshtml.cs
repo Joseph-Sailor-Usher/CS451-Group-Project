@@ -11,79 +11,44 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Identity;
-
-
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace CS451_Team_Project.Pages
 {
     public class NewLoginModel : PageModel
     {
-
         // have to check if SIM is reallhy doing anything 
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<NewLoginModel> _logger;
 
-        public NewLoginModel(SignInManager<ApplicationUser> signInManager, ILogger<NewLoginModel> logger)
+        public NewLoginModel(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, ILogger<NewLoginModel> logger)
         {
             _signInManager = signInManager;
+            _userManager = userManager;
             _logger = logger;
         }
 
         [FromForm]
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         [BindProperty]
         public InputModel Input { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public string ReturnUrl { get; set; }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         [TempData]
         public string ErrorMessage { get; set; }
-
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
         public class InputModel
         {
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [Required]
             [EmailAddress]
             public string Email { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [Required]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            /// <summary>
-            ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-            ///     directly from your code. This API may change or be removed in future releases.
-            /// </summary>
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
         }
@@ -105,7 +70,7 @@ namespace CS451_Team_Project.Pages
             ReturnUrl = returnUrl;
         }
 
-        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+        public async Task<IActionResult> OnPostAsync([FromServices] AppDbContext db, string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
 
@@ -115,20 +80,42 @@ namespace CS451_Team_Project.Pages
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
-                if (result.Succeeded)
+
+                _logger.LogWarning($"Invalid login attempt for user: {Input.Email}");
+                _logger.LogWarning($"Invalid login attempt for user: {Input.Password}");
+                _logger.LogWarning($"Invalid login attempt for user: {Input.RememberMe}");
+                
+                var user = db.Users.FirstOrDefault(u => u.Email == Input.Email);
+                //var user = await _userManager.FindByEmailAsync(Input.Email);
+
+                if (user != null && await _userManager.CheckPasswordAsync(user, Input.Password))
                 {
-                    _logger.LogInformation("User logged in.");
-                    return RedirectToPage("Verification", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
-                }
-                if (result.RequiresTwoFactor)
-                {
-                    return RedirectToPage("Verification", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
-                }
-                if (result.IsLockedOut)
-                {
-                    _logger.LogWarning("User account locked out.");
-                    return RedirectToPage("./Lockout");
+                    // Check other requirements like email confirmation, two-factor authentication, etc.
+                    if (!await _userManager.IsEmailConfirmedAsync(user))
+                    {
+                        ModelState.AddModelError(string.Empty, "You must confirm your email before logging in.");
+                        return Page();
+                    }
+
+                    // Check if two-factor authentication is required
+                    if (_userManager.SupportsUserTwoFactor && await _userManager.GetTwoFactorEnabledAsync(user))
+                    {
+                        return RedirectToPage("Verification", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                    }
+
+                    // Sign in the user
+                    var result = await _signInManager.CheckPasswordSignInAsync(user, Input.Password, Input.RememberMe);
+
+                    if (result.Succeeded)
+                    {
+                        _logger.LogInformation("User logged in.");
+                        return RedirectToPage("Verification", new { email = Input.Email, RememberMe = Input.RememberMe, returnUrl = returnUrl });
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                        return Page();
+                    }
                 }
                 else
                 {
@@ -136,7 +123,6 @@ namespace CS451_Team_Project.Pages
                     return Page();
                 }
             }
-
             // If we got this far, something failed, redisplay form
             return Page();
         }
