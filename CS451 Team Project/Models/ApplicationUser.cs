@@ -15,4 +15,13 @@ namespace CS451_Team_Project.Models
         public string? TwoFactorKey { get; set; }
         //public string Key { get; set; }
     }
+
+    public class Photo
+    {
+        public int PhotoId { get; set; }
+        public string UserId { get; set; }
+        public string PhotoName { get; set; }
+        public string PhotoPath { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+    }
 }
