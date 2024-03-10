@@ -11,7 +11,6 @@ namespace CS451_Team_Project.Models
 {
     public class AppDbContext : IdentityDbContext<ApplicationUser>
     {
-
         protected readonly IConfiguration Configuration;
 
         public AppDbContext(IConfiguration configuration)
