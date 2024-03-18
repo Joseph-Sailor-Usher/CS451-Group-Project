@@ -46,4 +46,11 @@
      height: 200px;
      object-fit: cover;
 }
-  
+
+#transactionSearch {
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
