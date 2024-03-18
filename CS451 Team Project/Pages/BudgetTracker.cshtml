@@ -12,8 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/dashboard-custom.css">
+    <link rel="stylesheet" href="~/css/custom.css">
+    <link rel="stylesheet" href="~/css/dashboard-custom.css">
 </head>
 
 <body>
@@ -26,17 +26,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="dashboard.html"><i class="bi-compass"></i> Dashboard</a>
+                        <a class="nav-link" asp-page="Dashboard"><i class="bi-compass"></i> Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi-cash-stack"></i> Budget Tracker</a>
+                        <a class="nav-link" asp-page="BudgetTracker"><i class="bi-cash-stack"></i> Budget Tracker</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi-mortarboard"></i> Finacial Education</a>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link" href="register.html">Login/Register</a>
-                    </li> -->
                 </ul>
             </div>
             <div class="dropdown text-end">
@@ -44,10 +41,10 @@
                     <img src="ExampleProfile.png" alt="Avatar" width="32" height="32" class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" asp-page="FileUpload">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Settings</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="register.html">Login/Register</a></li>
+                    <li><a class="dropdown-item" asp-page="Register">Login/Register</a></li>
                 </ul>
             </div>
         </div>
@@ -125,45 +122,82 @@
             </li>
         </ul>
     </div>
-
-
-    <div class="container g-4">
+    <div class="container ">
         <div class="card-group">
-            <div class="col-md-4 col-lg-3">
-                <div class="col">
-                    <div class="card">
-                        <canvas id="myPieChart"></canvas>
-                        <div class="card-body">
-                            <h5 class="card-title">First Card</h5>
-                            <p class="card-text">Budget Chart</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card border-dark">
-                            <div id="carouselFinacialTips" class="carousel slide">
-                                <div class="carousel-inner"></div>
+            <div class="col-md-12 col-lg-6">
+                <div class="card border-dark">
+                    <div id="carouselFinacialTips" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <canvas id="myPieChart"></canvas>
+                                <div class="card-body">
+                                    <h5 class="card-title">Budget Chart</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item item">
+                                <canvas id="debtPieChart"></canvas>
+                                <div class="card-body">
+                                    <h5 class="card-title">Debt Chart</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item item">
+                                <canvas id="myLineChart"></canvas>
+                                <div class="card-body">
+                                    <h5 class="card-title">Investment Tracker</h5>
+                                </div>
                             </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 col-lg-9">
-                <div class="card">
-                    <canvas id="myLineChart"></canvas>
-                    <div class="card-body">
-                        <h5 class="card-title">Second Card</h5>
-                        <p class="card-text">Chart Line</p>
-                    </div>
-                </div>
-            </div>
+
+            <!--
+                <div class="container">
+                    <div class="card-group">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="col me-3">
+                                <div class="card">
+                                    <canvas id="myPieChart"></canvas>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Budget Chart</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col me-3">
+                                <div class="card">
+                                    <canvas id="debtPieChart"></canvas>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Debt Chart</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-lg-8">
+                            <div class="card">
+                                <canvas id="myLineChart"></canvas>
+                                <div class="card-body">
+                                    <h5 class="card-title">Investment Tracker</h5>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+
             <div class="card my-4">
                 <div class="card-body">
                     <h5 class="card-title">Transactions</h5>
                     <div class="mb-3">
                         <input type="text" class="form-control" id="transactionSearch" placeholder="Search transactions...">
                     </div>
-                    <div class="table-responsive">
-                        <table class="table">
+                    <div class="table-responsive-sm" style="max-height:500px; overflow-x:hidden;">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>Date</th>
@@ -173,20 +207,156 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- For Database Connection -->
+@*                                 @{
+                                    // open database connection etc
+                                    var transactions = db.query("<query>");
+                                }
+
+                                <table>
+                                @foreach (var row in transaction)
+                                {
+                                        <tr>
+                                            <td>@row.date</td>
+                                            <td>@row.description</td>
+                                            <td>@row.category</td>
+                                            <td>@row.amount</td>
+                                        </tr>
+                                }  *@
+                               <!-- </table> -->
                                 <!-- Example data, replicate rows as needed -->
                                 <tr>
                                     <td>2024-03-01</td>
+                                    <td>Price Chopper</td>
                                     <td>Groceries</td>
-                                    <td>Food & Dining</td>
                                     <td>$150.00</td>
                                 </tr>
                                 <tr>
-                                    <td>2024-03-05</td>
+                                    <td>2024-03-02</td>
                                     <td>Internet Bill</td>
                                     <td>Utilities</td>
                                     <td>$60.00</td>
                                 </tr>
-                                <!-- Add more rows here -->
+                                <tr>
+                                    <td>2024-03-03</td>
+                                    <td>Door Dash</td>
+                                    <td>Misc</td>
+                                    <td>$30.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-05</td>
+                                    <td>Water Bill</td>
+                                    <td>Utilities</td>
+                                    <td>$25.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-05</td>
+                                    <td>Bank Transfer to Savings</td>
+                                    <td>Savings</td>
+                                    <td>$200.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-05</td>
+                                    <td>Rent</td>
+                                    <td>Utilities</td>
+                                    <td>$800.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-10</td>
+                                    <td>Movies</td>
+                                    <td>Misc</td>
+                                    <td>$50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-15</td>
+                                    <td>Price Chopper</td>
+                                    <td>Groceries</td>
+                                    <td>$150.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-15</td>
+                                    <td>Electric Bill</td>
+                                    <td>Investing</td>
+                                    <td>$65.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-18</td>
+                                    <td>Student Loan Payment</td>
+                                    <td>Debt</td>
+                                    <td>$1500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-18</td>
+                                    <td>Auto Payment</td>
+                                    <td>Debt</td>
+                                    <td>$120.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-18</td>
+                                    <td>Auto Insurance</td>
+                                    <td>Utilities</td>
+                                    <td>$55.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-03-20</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>$300.00</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -197,11 +367,10 @@
 
         </div>
     </div>
-    <script src="js/toggle-colors.js"></script>
-    <script src="js/chart-info.js"></script>
+    <script src="~/js/toggle-colors.js"></script>
+    <script src="~/js/chart-info.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <script>
         $(document).ready(function () {
             $("#transactionSearch").on("keyup", function () {

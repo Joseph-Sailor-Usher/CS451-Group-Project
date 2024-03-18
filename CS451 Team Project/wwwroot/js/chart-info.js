@@ -24,6 +24,27 @@ var myPieChart = new Chart(ctxP, {
           }
      }
 });
+var ctxP = document.getElementById('debtPieChart').getContext('2d');
+var myPieChart = new Chart(ctxP, {
+    type: 'doughnut',
+    data: {
+        labels: ["Mortgage", "Auto Loan", "Student Loan", "Credit Card"],
+        datasets: [{
+            data: [800, 150, 300, 150],
+            backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#FFA07A"],
+            borderColor: "white",
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: localStorage.getItem('theme') === 'light' ? "gray" : "white"
+                }
+            }
+        }
+    }
+});
 var ctxL = document.getElementById('myLineChart').getContext('2d');
 var myLineChart = new Chart(ctxL, {
      type: 'line',
