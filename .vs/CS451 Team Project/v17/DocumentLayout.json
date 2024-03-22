@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\verification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\verification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\newlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\newlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\verification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\verification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NewLogin.cshtml",
               "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\NewLogin.cshtml",
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\NewLogin.cshtml",
               "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\NewLogin.cshtml",
               "RelativeToolTip": "CS451 Team Project\\Pages\\NewLogin.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-04T15:05:49.283Z",
               "IsPinned": true,
@@ -60,21 +60,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Register.cshtml",
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\Register.cshtml",
               "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Register.cshtml",
               "RelativeToolTip": "CS451 Team Project\\Pages\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-05T19:08:17.548Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Verification.cshtml",
               "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Verification.cshtml",
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\Verification.cshtml",
@@ -97,8 +96,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-20T22:12:36.344Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -111,8 +109,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-20T22:25:06.875Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -125,8 +122,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-20T22:25:14.502Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-20T22:25:28.05Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "CS451 Team Project\\Pages\\FileUpload.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T22:32:10.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T22:32:10.665Z"
             }
           ]
         }
