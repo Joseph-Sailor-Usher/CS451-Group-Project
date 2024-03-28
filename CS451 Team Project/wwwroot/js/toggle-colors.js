@@ -82,7 +82,8 @@
                          const theme = toggle.getAttribute('data-bs-theme-value');
                          setStoredTheme(theme); // Update the stored theme
                          setTheme(theme); // Apply the selected theme
-                         showActiveTheme(theme, true); // Update the UI
+                        showActiveTheme(theme, true); // Update the UI
+                        updateChartsForCurrentTheme();
                     });
                });
      });
