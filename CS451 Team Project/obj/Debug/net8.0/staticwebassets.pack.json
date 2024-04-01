@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\StyleSheet.css"
     },
     {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about-custom.css",
+      "PackagePath": "staticwebassets\\css\\about-custom.css"
+    },
+    {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about.css",
       "PackagePath": "staticwebassets\\css\\about.css"
     },
@@ -19,6 +23,22 @@
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\Budget.png",
+      "PackagePath": "staticwebassets\\images\\Budget.png"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\finance.png",
+      "PackagePath": "staticwebassets\\images\\finance.png"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\welcome.png",
+      "PackagePath": "staticwebassets\\images\\welcome.png"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
     },
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\chart-info.js",

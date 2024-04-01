@@ -1,6 +1,7 @@
 ﻿@page 
 @model NewLoginModel
 @{
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
@@ -48,6 +49,7 @@
                 </ul>
             </div>
         </div>
+
     </nav>
 
     <svg class="d-none" xmlns="http://www.w3.org/2000/svg">
@@ -169,22 +171,23 @@
                         <div class="modal-header">
                             <h5 class="modal-title">Forgot Password</h5>
                         </div>
-                        <div class="modal-body">
-                            <p>Please provide your email address so we can send you a temporary password.</p>
-                            <form class="m-1">
+                        <form method="post" asp-controller="Email" asp-action="SendEmail" enctype="multipart/form-data">
+                            <div class="modal-body">
+                                <p>Please provide your email address so we can send you a temporary password.</p>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="name@example.com">
+                                    <input type="text" class="form-control" placeholder="name@example.com" name="To" id="toEmail">
                                 </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-bs-dismiss="modal" type="submit" id="sendMessage">
-                                Submit
-                            </button>
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="submit">
-                                Cancel
-                            </button>
-                        </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-dismiss="modal" type="submit" id="sendMessage">
+                                    Submit
+                                </button>
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
