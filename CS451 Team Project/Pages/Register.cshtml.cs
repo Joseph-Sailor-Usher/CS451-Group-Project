@@ -1,5 +1,6 @@
 using CS451_Team_Project.Models;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -9,7 +10,6 @@ using System.Text.Encodings.Web;
 using System.Text;
 //using Microsoft.AspNetCore.Identity.UI.Services;
 using System.Net;
-
 
 namespace CS451_Team_Project.Pages
 {

@@ -1,6 +1,7 @@
 ﻿@page
 @model CS451_Team_Project.Pages.BudgetTrackerModel
 @{
+    Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
@@ -141,7 +142,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item item">
-                                <canvas id="myLineChart"></canvas>
+                                <canvas id="myLinesChart"></canvas>
                                 <div class="card-body">
                                     <h5 class="card-title">Investment Tracker</h5>
                                 </div>
@@ -208,22 +209,22 @@
                             </thead>
                             <tbody>
                                 <!-- For Database Connection -->
-@*                                 @{
-                                    // open database connection etc
-                                    var transactions = db.query("<query>");
+                                @*                                 @{
+                                // open database connection etc
+                                var transactions = db.query("<query>");
                                 }
 
                                 <table>
                                 @foreach (var row in transaction)
                                 {
-                                        <tr>
-                                            <td>@row.date</td>
-                                            <td>@row.description</td>
-                                            <td>@row.category</td>
-                                            <td>@row.amount</td>
-                                        </tr>
+                                <tr>
+                                <td>@row.date</td>
+                                <td>@row.description</td>
+                                <td>@row.category</td>
+                                <td>@row.amount</td>
+                                </tr>
                                 }  *@
-                               <!-- </table> -->
+                                <!-- </table> -->
                                 <!-- Example data, replicate rows as needed -->
                                 <tr>
                                     <td>2024-03-01</td>
@@ -362,9 +363,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <script src="~/js/toggle-colors.js"></script>

@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\newlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\newlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\verification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\verification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\budgettracker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -27,12 +19,16 @@
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\fileupload.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\fileupload.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\wwwroot\\css\\about.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\wwwroot\\css\\about.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\fileupload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\fileupload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\wwwroot\\css\\about-custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\wwwroot\\css\\about-custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,20 +38,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NewLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\NewLogin.cshtml",
-              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\NewLogin.cshtml",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\NewLogin.cshtml",
-              "RelativeToolTip": "CS451 Team Project\\Pages\\NewLogin.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA+AAAA",
+              "DocumentIndex": 5,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\app.js",
+              "RelativeDocumentMoniker": "CS451 Team Project\\wwwroot\\js\\app.js",
+              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\app.js",
+              "RelativeToolTip": "CS451 Team Project\\wwwroot\\js\\app.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-01T04:35:44.555Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Dashboard.cshtml",
+              "RelativeToolTip": "CS451 Team Project\\Pages\\Dashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-04T15:05:49.283Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-04-01T04:31:56.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BudgetTracker.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
+              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\BudgetTracker.cshtml",
+              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
+              "RelativeToolTip": "CS451 Team Project\\Pages\\BudgetTracker.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-01T04:31:48.619Z",
               "EditorCaption": ""
             },
             {
@@ -66,98 +91,47 @@
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\Register.cshtml",
               "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Register.cshtml",
               "RelativeToolTip": "CS451 Team Project\\Pages\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABGAAAA",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAAC0AAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T19:08:17.548Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-04-01T14:22:11.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Verification.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Verification.cshtml",
-              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\Verification.cshtml",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Verification.cshtml",
-              "RelativeToolTip": "CS451 Team Project\\Pages\\Verification.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T19:08:36.229Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "about-custom.css",
+              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about-custom.css",
+              "RelativeDocumentMoniker": "CS451 Team Project\\wwwroot\\css\\about-custom.css",
+              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about-custom.css",
+              "RelativeToolTip": "CS451 Team Project\\wwwroot\\css\\about-custom.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-01T04:21:50.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\About.cshtml",
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\About.cshtml",
               "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\About.cshtml",
               "RelativeToolTip": "CS451 Team Project\\Pages\\About.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T22:12:36.344Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-04-01T04:19:52.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "BudgetTracker.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
-              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\BudgetTracker.cshtml",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
-              "RelativeToolTip": "CS451 Team Project\\Pages\\BudgetTracker.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T22:25:06.875Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\Dashboard.cshtml",
-              "RelativeToolTip": "CS451 Team Project\\Pages\\Dashboard.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T22:25:14.502Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FileUpload.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\FileUpload.cshtml",
-              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\FileUpload.cshtml",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\FileUpload.cshtml",
-              "RelativeToolTip": "CS451 Team Project\\Pages\\FileUpload.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T22:25:28.05Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FileUpload.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\FileUpload.cshtml.cs",
-              "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\FileUpload.cshtml.cs",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\FileUpload.cshtml.cs",
-              "RelativeToolTip": "CS451 Team Project\\Pages\\FileUpload.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T22:32:10.665Z",
-              "EditorCaption": ""
+              "Title": "about.css",
+              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about.css",
+              "RelativeDocumentMoniker": "CS451 Team Project\\wwwroot\\css\\about.css",
+              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about.css",
+              "RelativeToolTip": "CS451 Team Project\\wwwroot\\css\\about.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQBAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-01T04:21:10.001Z"
             }
           ]
         }
