@@ -127,12 +127,14 @@
         </a>
         <hr>
         <ul class="nav nav-pills flex-sm-column mb-auto ">
-            <li class="nav-item">
+            <!--
+             <li class="nav-item">
                     <a asp-page="FileUpload" class="nav-link " aria-current="page">
                     <svg class="bi pe-none me-2" width="16" height="16"><use href="#" /></svg>
                     File Upload
                 </a>
             </li>
+            -->
             <li>
                 <a href="profilePage.html" class="nav-link active">
                     Profile
@@ -148,7 +150,7 @@
             <div class="card-body text-center">
               <img src="~/images/ProfilePic.png" alt="avatar"
                 class="rounded-circle img-fluid" style="width: 150px;">
-              <h5 class="my-3">John Smith</h5>
+              <h5 class="my-3">Lincoin Baker</h5>
               <p class="text-muted mb-1">Full Stack Developer</p>
               <p class="text-muted mb-4">Kansas City, MO</p>
             </div>
@@ -177,7 +179,7 @@
                     <tr>
                       <th scope="row">2</th>
                       <td>Total Transactions</td>
-                      <td>248</td>
+                      <td>$248</td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
@@ -212,7 +214,7 @@
                   <tr>
                     <th scope="row">2</th>
                     <td>Total Transactions</td>
-                    <td>700</td>
+                    <td>$700</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
@@ -247,7 +249,7 @@
                   <tr>
                     <th scope="row">2</th>
                     <td>Total Transactions</td>
-                    <td>2500</td>
+                    <td>$2,500</td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
@@ -287,7 +289,7 @@
                   <p class="mb-0">Full Name</p>
                 </div>
                 <div class="col-sm-9">
-                  <p class="text-muted mb-0">Johnatan Smith</p>
+                  <p class="text-muted mb-0">Lincoin Baker</p>
                 </div>
               </div>
               <hr>
@@ -296,7 +298,7 @@
                   <p class="mb-0">Email</p>
                 </div>
                 <div class="col-sm-9">
-                  <p class="text-muted mb-0">example@example.com</p>
+                  <p class="text-muted mb-0">webapptest2024@gmail.com</p>
                 </div>
               </div>
               <hr>
@@ -400,7 +402,83 @@
           </div>
 
 </div>
+        <style>
+    #chatToggle {
+        left: 1rem; /* Move 1rem towards center from the left */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .chatbox {
+            height: 400px;
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            scrollbar-width: thin; 
+            scrollbar-color: #999 transparent; 
+        }
+        /* Styling for scrollbar */
+        .chatbox::-webkit-scrollbar {
+            width: 10px; /* Width of the scrollbar */
+        }
+        .chatbox::-webkit-scrollbar-thumb {
+            background-color: #999; /* Color of the scrollbar thumb */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .user {
+            color: white;
+        }
+        .bot {
+            color: aqua;
+        }
 
+        input[type="text"] {
+            width: 75%;
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px 20px 20px 20px; /* Rounded left corners */
+            height: auto; /* Dynamically adjust height */
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 20px 20px 20px 20px; /* Rounded right corners */
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            z-index: 1000; /* Set a high z-index to ensure the dropdown displays over other elements */
+        }
+
+    }
+    </style>
+    <div id="chatToggle" class="dropdown position-fixed bottom-0 end-1 mb-3 bd-mode-toggle">
+
+        <button aria-expanded="false" aria-label="Toggle Chat" class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" id="bd-theme" type="button">
+            Chat
+            <span class="visually-hidden">Toggle Chat</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow p-4" style="width: 425px;">
+            <h1>AI Assistant Timmy</h1>
+            <div class="chatbox" id="chatbox"></div>
+            <div>
+                <p></p> <!-- spacing don't worry about it-->
+            </div>
+            <form id="chatForm">
+                <input type="text" id="prompt" placeholder="Ask something..." required autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+
+            <script src="~/js/script.js"></script>
+        </ul>
+    </div>
 <script>
   var insert = document.getElementById('insertSaving');
   insert.addEventListener('click', function() {

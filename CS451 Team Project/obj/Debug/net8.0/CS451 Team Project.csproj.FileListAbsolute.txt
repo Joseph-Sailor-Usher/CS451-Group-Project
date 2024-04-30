@@ -1095,3 +1095,9 @@ C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\
 C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\MailKit.dll
 C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\itextsharp.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\Microsoft.AspNetCore.NodeServices.dll

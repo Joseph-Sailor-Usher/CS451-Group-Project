@@ -17,8 +17,28 @@
       "PackagePath": "staticwebassets\\css\\about.css"
     },
     {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
+      "PackagePath": "staticwebassets\\css\\budgetTracker.css"
+    },
+    {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\newLogin.css",
+      "PackagePath": "staticwebassets\\css\\newLogin.css"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\tips.css",
+      "PackagePath": "staticwebassets\\css\\tips.css"
     },
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\favicon.ico",
@@ -53,8 +73,32 @@
       "PackagePath": "staticwebassets\\js\\form-validation.js"
     },
     {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\header.js",
+      "PackagePath": "staticwebassets\\js\\header.js"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\newLogin.js",
+      "PackagePath": "staticwebassets\\js\\newLogin.js"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\openai-interface.js",
+      "PackagePath": "staticwebassets\\js\\openai-interface.js"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\tips.js",
+      "PackagePath": "staticwebassets\\js\\tips.js"
+    },
+    {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\toggle-colors.js",
       "PackagePath": "staticwebassets\\js\\toggle-colors.js"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\toggleColorspt2.js",
+      "PackagePath": "staticwebassets\\js\\toggleColorspt2.js"
     },
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\lib\\bootstrap\\LICENSE",

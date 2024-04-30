@@ -62,12 +62,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Kevin Membreno/Documents/GitHub/CS451-Group-Project/CS451 Team Project/Pages/ProfilePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kevin Membreno/Documents/GitHub/CS451-Group-Project/CS451 Team Project/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kevin Membreno/Documents/GitHub/CS451-Group-Project/CS451 Team Project/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kevin Membreno/Documents/GitHub/CS451-Group-Project/CS451 Team Project/Pages/Tips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlwcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kevin Membreno/Documents/GitHub/CS451-Group-Project/CS451 Team Project/Pages/Verification.cshtml]

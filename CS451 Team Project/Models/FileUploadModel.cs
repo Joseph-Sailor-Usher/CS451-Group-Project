@@ -3,6 +3,7 @@ using CS451_Team_Project.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 public class FileUploadModel : PageModel
 {
@@ -18,14 +19,14 @@ public class FileUploadModel : PageModel
     [BindProperty]
     public IFormFile UploadedFile { get; set; }
 
-    public async Task<IActionResult> OnPostAsync()
+    public async Task<IActionResult> OnPostAsync([FromServices] AppDbContext db)
     {
         if (!ModelState.IsValid)
         {
             return Page();
         }
-
-        var user = await _userManager.GetUserAsync(User);
+        string email = "webapptest2024@gmail.com";
+        var user = db.Users.FirstOrDefault(u => u.Email == email);
         var userId = user?.Id;
 
         if (userId == null || UploadedFile == null)
