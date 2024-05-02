@@ -13,6 +13,7 @@ namespace CS451_Team_Project.Models
         public string UserName { get; set; } = "";
         public DateTime CreatedAt { get; set; }
         public string? TwoFactorKey { get; set; }
+        public bool RememberMe { get; set; } = false;
         //public string Key { get; set; }
     }
 

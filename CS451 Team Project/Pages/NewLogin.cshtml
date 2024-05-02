@@ -219,11 +219,10 @@
                             </label>
                         </div>
                         <div class="form-check text-start my-3">
+                            <label asp-for="Input.RememberMe" class="form-label">
                             <input class="form-check-input" asp-for="Input.RememberMe" id="flexCheckDefault" type="checkbox" />
                             @Html.DisplayNameFor(m => m.Input.RememberMe)
-                            @*                     <label class="form-check-label" for="flexCheckDefault">
-                            Remember me
-                            </label> *@
+                            </label>
                         </div>
                         <button class="btn btn-primary w-100 py-2" type="submit">
                             Sign in

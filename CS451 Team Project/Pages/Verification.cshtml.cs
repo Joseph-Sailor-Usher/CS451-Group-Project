@@ -80,8 +80,12 @@ namespace CS451_Team_Project.Pages
                 bool isPinValid = tfa.ValidateTwoFactorPIN(user.TwoFactorKey, Input.Code);
                 if (isPinValid)
                 {
+                    // Encrypt the email before passing it to the URL
+                    string encryptedEmail = EncryptionHelper.Encrypt(email);
+
+                    var token = GenerateTokenForUser(user);
                     // Set the redirect URL upon successful verification
-                    return RedirectToPage("Dashboard"); // Replace "/YourRedirectPage" with the desired page
+                    return RedirectToPage("Dashboard", new { token = token, email = encryptedEmail });
                 }
             }
 
@@ -90,6 +94,41 @@ namespace CS451_Team_Project.Pages
         }
 
         // Other methods...
+        private string GenerateTokenForUser(ApplicationUser user)
+        {
+            // Generate a token for your purpose
+            // Here, you can use any method to generate a token
+            // For example, you can generate a random string
+            string token = GenerateRandomStringUser(250);
+
+            // Optionally, you can store the token in the user's record in the database
+            // user.DashboardToken = token;
+            // db.SaveChanges();
+
+            return token;
+        }
+
+        public static string GenerateRandomStringUser(int length, string allowableChars = null)
+        {
+            if (string.IsNullOrEmpty(allowableChars))
+            {
+                allowableChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            }
+
+            var rnd = new byte[length];
+            using (var rng = new RNGCryptoServiceProvider())
+                rng.GetBytes(rnd);
+
+            var allowable = allowableChars.ToCharArray();
+            var l = allowable.Length;
+            var chars = new char[length];
+            for (var i = 0; i < length; i++)
+            {
+                chars[i] = allowable[rnd[i] % l];
+            }
+
+            return new string(chars);
+        }
 
 
 

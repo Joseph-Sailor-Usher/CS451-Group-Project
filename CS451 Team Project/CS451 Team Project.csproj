@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>CS451_Team_Project</RootNamespace>
+    <Configurations>Debug;Release;Node</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
