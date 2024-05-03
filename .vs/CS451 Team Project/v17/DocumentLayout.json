@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\",
+  "WorkspaceRootPath": "C:\\Users\\megha\\Documents\\GitHub\\please\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\budgettracker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\megha\\documents\\github\\please\\cs451 team project\\pages\\budgettracker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\budgettracker.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\pages\\budgettracker.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\megha\\documents\\github\\please\\cs451 team project\\pages\\budgettracker.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\pages\\budgettracker.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\megha\\documents\\github\\please\\cs451 team project\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\kevin membreno\\documents\\github\\cs451-group-project\\cs451 team project\\wwwroot\\css\\budgettracker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|c:\\users\\megha\\documents\\github\\please\\cs451 team project\\wwwroot\\css\\budgettracker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{37B3DCFC-346C-414A-ADEA-FEB5477B5039}|CS451 Team Project\\CS451 Team Project.csproj|solutionrelative:cs451 team project\\wwwroot\\css\\budgettracker.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BudgetTracker.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
+              "DocumentMoniker": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\BudgetTracker.cshtml",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
+              "ToolTip": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\Pages\\BudgetTracker.cshtml",
               "RelativeToolTip": "CS451 Team Project\\Pages\\BudgetTracker.cshtml",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAUwJkAAAClAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-02T01:13:27.711Z",
               "IsPinned": true,
@@ -46,9 +46,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "budgetTracker.css",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
+              "DocumentMoniker": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
               "RelativeDocumentMoniker": "CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
+              "ToolTip": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
               "RelativeToolTip": "CS451 Team Project\\wwwroot\\css\\budgetTracker.css",
               "ViewState": "AQIAAP8AAAAAAAAAAAAewAABAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -59,18 +59,14 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BudgetTracker.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\Pages\\BudgetTracker.cshtml.cs",
               "RelativeDocumentMoniker": "CS451 Team Project\\Pages\\BudgetTracker.cshtml.cs",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\Pages\\BudgetTracker.cshtml.cs",
+              "ToolTip": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\Pages\\BudgetTracker.cshtml.cs",
               "RelativeToolTip": "CS451 Team Project\\Pages\\BudgetTracker.cshtml.cs",
               "ViewState": "AQIAAK4AAAAAAAAAAAAIwNEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T03:35:41.893Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -80,9 +76,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "custom.css",
-              "DocumentMoniker": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\custom.css",
+              "DocumentMoniker": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\wwwroot\\css\\custom.css",
               "RelativeDocumentMoniker": "CS451 Team Project\\wwwroot\\css\\custom.css",
-              "ToolTip": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\custom.css",
+              "ToolTip": "C:\\Users\\megha\\Documents\\GitHub\\please\\CS451 Team Project\\wwwroot\\css\\custom.css",
               "RelativeToolTip": "CS451 Team Project\\wwwroot\\css\\custom.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
