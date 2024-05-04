@@ -25,12 +25,21 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 gantt
     title A Gantt Diagram
     dateFormat  YYYY-MM-DD
-    section Section
-    A task           :a1, 2024-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2024-02-15  , 12d
-    another task      : 24d
+    section Project Setup
+    Define Requirements  :done,    des1, 2024-01-01, 2024-01-08
+    Initial Design       :active,  des2, 2024-01-09, 2024-01-15
+
+    section Development
+    Implement Feature A  :         dev1, after des2, 5d
+    Implement Feature B  :         dev2, after dev1, 5d
+
+    section Testing
+    Quality Assurance    :         qa1, after dev2, 2024-02-01, 15d
+    User Testing         :         qa2, after qa1, 24d
+
+    section Documentation
+    Document Features    :         doc1, after qa2, 48h
+    Release Notes        :         doc2, after doc1, 24h
 
 3. **Architecture**
    - Overview of the application architecture including software and hardware requirements.
