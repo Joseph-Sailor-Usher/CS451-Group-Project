@@ -147,9 +147,9 @@ namespace CS451_Team_Project.Models
                 "Student Loan",
                 "Credit Card",
                 "Loan",
-                "Personal Loans",
+                "Personal Loan",
                 "Medical Debt",
-                "Business Loans",
+                "Business Loan",
                 "Tax Debt",
                 "Debt"
             };
@@ -181,9 +181,9 @@ namespace CS451_Team_Project.Models
                 { "Student Loan", System.Drawing.Color.Green },
                 { "Credit Card", System.Drawing.Color.Yellow },
                 { "Loan", System.Drawing.Color.Orange },
-                { "Personal Loans", System.Drawing.Color.DarkMagenta },
+                { "Personal Loan", System.Drawing.Color.DarkMagenta },
                 { "Medical Debt", System.Drawing.Color.DarkCyan },
-                { "Business Loans", System.Drawing.Color.DarkGoldenrod },
+                { "Business Loan", System.Drawing.Color.DarkGoldenrod },
                 { "Tax Debt", System.Drawing.Color.DarkKhaki },
                 { "Debt", System.Drawing.Color.Purple },
             };
@@ -214,7 +214,7 @@ namespace CS451_Team_Project.Models
 
             // Adjust the size of the legend
             legend.Font = new System.Drawing.Font("Aharoni", 18); // Set the font size (adjust as needed)
-
+            
             // Add series to the chart
             System.Web.UI.DataVisualization.Charting.Series series = new System.Web.UI.DataVisualization.Charting.Series();
             series.ChartType = SeriesChartType.Pie;

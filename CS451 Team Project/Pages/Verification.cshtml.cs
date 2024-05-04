@@ -97,13 +97,8 @@ namespace CS451_Team_Project.Pages
         private string GenerateTokenForUser(ApplicationUser user)
         {
             // Generate a token for your purpose
-            // Here, you can use any method to generate a token
-            // For example, you can generate a random string
-            string token = GenerateRandomStringUser(250);
 
-            // Optionally, you can store the token in the user's record in the database
-            // user.DashboardToken = token;
-            // db.SaveChanges();
+            string token = GenerateRandomStringUser(250);
 
             return token;
         }

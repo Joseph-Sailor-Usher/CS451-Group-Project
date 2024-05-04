@@ -145,12 +145,11 @@ namespace CS451_Team_Project.Pages
                 return RedirectToPage("/Error");
             }
 
-            _logger.LogWarning(decryptedEmail);
-            _logger.LogWarning("WORKS!!!!!!!!!!!!!!!!!!!");
-
             // Asynchronously generate the chart
             Charts chart = new Charts(_logger);
             await chart.GenerateBudgetPieChartAsync(_dbContext, decryptedEmail);
+
+
             Charts chart2 = new Charts(_logger);
             await chart2.GenerateSecondBudgetPieChartAsync(_dbContext, decryptedEmail);
 
@@ -165,9 +164,7 @@ namespace CS451_Team_Project.Pages
         private bool ValidateTokenForDashboard(string email, string token)
         {
             // Validate the token
-            // You can implement your own method to validate the token
-
-            // For demonstration, let's assume the token is valid if it's not null or empty
+            // let's assume the token is valid if it's not null or empty
             return !string.IsNullOrEmpty(token);
         }
 

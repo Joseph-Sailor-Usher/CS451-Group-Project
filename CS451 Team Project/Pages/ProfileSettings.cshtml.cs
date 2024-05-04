@@ -76,9 +76,7 @@ namespace CS451_Team_Project.Pages
         private bool ValidateTokenForDashboard(string email, string token)
         {
             // Validate the token
-            // You can implement your own method to validate the token
-
-            // For demonstration, let's assume the token is valid if it's not null or empty
+            // let's assume the token is valid if it's not null or empty
             return !string.IsNullOrEmpty(token);
         }
     }

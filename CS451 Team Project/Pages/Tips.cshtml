@@ -18,8 +18,15 @@
 </head>
 
 <body>
+    <style>
+        .charts_container {
+            margin-top: 3rem;
+        }
+    </style>
     <section class="charts_container">
+
         <div class="container">
+
             <div class="card-group">
 
                 <div class="col-md-7 col-lg-6">
@@ -28,8 +35,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">Budget Ratio</h5>
                                 <p class="card-text">50% needs/30% wants/20% savings</p>
+                                <canvas class="pie_canvas" id="staticRatioPieChart"></canvas>
                             </div>
-                            <canvas class="pie_canvas" id="staticRatioPieChart"></canvas>
                         </a>
                     </div>
                 </div>
@@ -40,8 +47,13 @@
                             <div class="card-body">
                                 <h5 class="card-title">Budget Ratio</h5>
                                 <p class="card-text">Your current monthly ratio</p>
+                                <style>
+                                    img {
+                                        padding: 0.75rem;
+                                    }
+                                </style>
+                                <img id="pie_canvas" src="~/images/budgetChart.png" alt="Budget Chart" />
                             </div>
-                            <img id="budgetChart" src="~/images/budgetChart.png" alt="Budget Chart" />
                         </a>
                     </div>
                 </div>

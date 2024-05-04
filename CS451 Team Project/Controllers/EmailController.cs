@@ -51,16 +51,15 @@ namespace CS451_Team_Project.Controllers
             // Encode the token for URL use
             var encodedToken = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
             var callbackUrl = $"https://localhost:7050/ForgotPassword?token={encodedToken}&email={Uri.EscapeDataString(user.Email)}";
-            // Assuming you have stored the user's name, operating system, and browser name in your ApplicationUser model
-            // For demonstration, I'm using placeholders. You should replace them with actual property names.
-            var userName = user.UserName; // Replace with actual property if available
-            var operatingSystem = "Windows"; // This information needs to be captured or passed by the user, not typically stored in user management
-            var browserName = "Chrome"; // Similarly, this is not typically stored in user management
+
+            var userName = user.UserName; 
+            var operatingSystem = "Windows"; 
+            var browserName = "Chrome";
 
             emailTemplate.Body = emailTemplate.Body
-                .Replace("{{name}}", userName)  // Replace with actual name based on user's email
-                .Replace("{{operating_system}}", operatingSystem)  // Replace with actual operating system based on user's email
-                .Replace("{{browser_name}}", browserName)// Replace with actual browser name based on user's email
+                .Replace("{{name}}", userName)  
+                .Replace("{{operating_system}}", operatingSystem) 
+                .Replace("{{browser_name}}", browserName)
                 .Replace("[Product Name]", "Financial Tracker")
                 .Replace("{{action_url}}", callbackUrl);
 

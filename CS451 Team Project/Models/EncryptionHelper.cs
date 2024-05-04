@@ -17,7 +17,6 @@ namespace CS451_Team_Project.Models
             }
         }
 
-        // Replace these keys with your own secure keys
         private static readonly byte[] Key = GenerateRandomKey(32);
         private static readonly byte[] IV = GenerateRandomKey(16);
 

@@ -67,11 +67,6 @@ namespace CS451_Team_Project.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPost([FromServices] AppDbContext db, string token, string email)
         {
             var user = db.Users.FirstOrDefault(u => u.Email == email);
-
-            _logger.LogInformation(email);
-            _logger.LogInformation(Input.Code);
-            _logger.LogInformation(Input.Password);
-            _logger.LogInformation(Input.ConfirmPassword);
             if (user == null)
             {
                 // Handle error: User not found

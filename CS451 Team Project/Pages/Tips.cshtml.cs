@@ -47,9 +47,7 @@ namespace CS451_Team_Project.Pages
                 if (user != null)
                 {
                     // Proceed with your logic using the user and token
-                    // For example, update the user's last login time, or perform any other action
-                    _logger.LogWarning(decryptedEmail);
-                    _logger.LogWarning($"WORKS!!!!!!!!!!!!!!!!!!!");
+
                     return Page(); // Return the Dashboard page
                 }
                 else
@@ -69,9 +67,7 @@ namespace CS451_Team_Project.Pages
         private bool ValidateTokenForDashboard(string email, string token)
         {
             // Validate the token
-            // You can implement your own method to validate the token
-
-            // For demonstration, let's assume the token is valid if it's not null or empty
+            // let's assume the token is valid if it's not null or empty
             return !string.IsNullOrEmpty(token);
         }
     }

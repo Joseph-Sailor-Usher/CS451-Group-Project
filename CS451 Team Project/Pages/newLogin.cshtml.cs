@@ -80,11 +80,6 @@ namespace CS451_Team_Project.Pages
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-
-                _logger.LogWarning($"Invalid login attempt for user: {Input.Email}");
-                _logger.LogWarning($"Invalid login attempt for user: {Input.Password}");
-                _logger.LogWarning($"Invalid login attempt for user: {Input.RememberMe}");
                 
                 var user = db.Users.FirstOrDefault(u => u.Email == Input.Email);
                 //var user = await _userManager.FindByEmailAsync(Input.Email);
