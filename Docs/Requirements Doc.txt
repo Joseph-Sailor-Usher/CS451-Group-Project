@@ -1,66 +1,48 @@
-# Commerce Bank Group Project Requirements
-
-## 1. Functional Requirements
-
-### User Management
-- Users must be able to register with details such as first name, last name, username, and email.
-- Authentication should require email confirmation.
-- Support for login and logout functionalities.
-- Capability for users to recover and reset their passwords via email.
-- Implementation of two-factor authentication.
-
-### Financial Dashboard
-- Provide a dashboard displaying a summary of financial activities.
-- Show recent transactions and key financial metrics.
-
-### Transaction Management
-- Allow users to record, edit, and delete financial transactions including details like date, amount, description, and category.
-
-### Budget Tracking
-- Feature a budget tracker that categorizes expenses and visualizes them (e.g., pie charts).
-- Enable users to set budget limits for different categories.
-
-### Reports and Notifications
-- Send email notifications for important account activities.
-- Generate and allow users to view and download financial reports.
-
-## 2. Security Requirements
-
-### Data Protection
-- Use HTTPS for all data transmissions.
-- Encrypt sensitive data like passwords and personal information.
-- Implement AES encryption for sensitive data operations within the application.
-
-### Access Control
-- Enforce authentication and authorization on all endpoints.
-- Implement role-based access control (RBAC) for user actions.
-
-## 3. Performance Requirements
-
-### Response Time
-- Ensure the application pages and user inputs load within 2 seconds under normal conditions.
-
-### Scalability
-- Handle a 50% increase in user load without performance degradation.
-
-## 4. Usability Requirements
-
-### User Interface
-- Ensure responsiveness and accessibility on various devices including desktops, tablets, and smartphones.
-- Maintain intuitive and user-friendly UI with clear navigation and consistent layout.
-
-### Accessibility
-- Comply with WCAG 2.1 accessibility standards to accommodate users with disabilities.
-
-## 5. Technical Requirements
-
-### Tech Stack
-- Backend developed using ASP.NET Core and Entity Framework Core.
-- Frontend using HTML, CSS, Bootstrap, and Blazor.
-- PostgreSQL for database management.
-- MailKit for handling email functionalities.
-
-### Development Practices
-- Use Git for version control with strict pull request and code review policies.
-- Implement CI/CD practices for efficient development and deployment processes.
-
+Project Requirements for the Commerce Bank Group Project
+1. Functional Requirements
+  User Management
+  Users must be able to register and create profiles with details such as first name, last name, username, and email.
+  Authentication should require email confirmation.
+  Users must be able to log in and log out of the system.
+  Users must have the ability to recover and reset their passwords via email.
+  Support for two-factor authentication using a secondary token or code.
+  Financial Dashboard
+  Users should have a dashboard that provides a summary of their financial activities.
+  The dashboard must display recent transactions and key financial metrics.
+  Transaction Management
+  Users must be able to record financial transactions with details such as date, amount, description, and category.
+  Users should be able to edit and delete their transactions.
+  Budget Tracking
+  The application should provide a budget tracker that categorizes expenses and displays them in a visual format (e.g., pie charts).
+  Users should be able to set budget limits for different categories.
+  Reports and Notifications
+  Users should receive email notifications for important account activities or alerts.
+  The system must generate financial reports that users can view and download.
+2. Security Requirements
+  Data Protection
+  All user data transmitted over the network must be encrypted using HTTPS.
+  Sensitive data such as passwords and personal information must be stored securely using appropriate encryption techniques.
+  The system must implement AES encryption for sensitive data operations within the application.
+  Access Control
+  Proper authentication and authorization checks must be implemented on all endpoints.
+  The system must enforce role-based access control (RBAC) to ensure users can only perform actions appropriate to their permissions.
+3. Performance Requirements
+  Response Time
+  The application should load pages and respond to user inputs within 2 seconds under normal load conditions.
+  Scalability
+  The application should be capable of handling a significant increase in user load (at least a 50% increase from current usage) without degradation in performance.
+4. Usability Requirements
+  User Interface
+  The application must be responsive and accessible on various devices, including desktops, tablets, and smartphones.
+  The UI should be intuitive and user-friendly, with clear navigation and consistent layout across pages.
+  Accessibility
+  The application should comply with WCAG 2.1 accessibility standards to ensure it is accessible to users with disabilities.
+5. Technical Requirements
+  Tech Stack
+  The application will utilize ASP.NET Core for the backend, with Entity Framework Core for ORM.
+  The frontend will be built using HTML, CSS, and Bootstrap, with Blazor for dynamic components.
+  PostgreSQL will be used as the database system.
+  The application should integrate MailKit for email functionalities.
+  Development Practices
+  The development team must use Git for version control, with a strict policy for pull requests and code reviews.
+  Continuous integration and deployment (CI/CD) practices should be implemented to streamline development and deployment processes.
