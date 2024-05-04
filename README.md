@@ -18,6 +18,20 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 - **Database:** SQL Server 2012 or above.
 - **Unit Testing:** At least 10% Code Coverage, xUnit
 
+## 📑 Requirement Docs
+1. **Project Plan Document**
+   - Detailed breakdown of project milestones, timelines, and deliverables.
+2. **Architecture**
+   - Overview of the application architecture including software and hardware requirements.
+3. **Test Documents**
+   - **Test Plan:** Strategy, scope, resources, and schedule for intended test activities.
+   - **Test Cases:** Specific instances to test whether the application meets its requirements.
+   - **Test Report:** A summary of testing activities and results.
+4. **Team Effort Estimation**
+   - Detailed estimates of time and resources required by the team to complete the project.
+5. **User Guide**
+   - Instructions on how to use the application along with FAQs and troubleshooting tips.
+
 ## 🎨 User Experience
 - Design must be accessible to all users, regardless of technical knowledge.
 - Emphasis on readable text and proper alignment.
