@@ -161,6 +161,30 @@ namespace CS451_Team_Project.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+            name: "expenses",
+            columns: table => new
+            {
+                date = table.Column<DateTime>(nullable: false),
+                description = table.Column<string>(maxLength: 100, nullable: false),
+                category = table.Column<string>(maxLength: 50, nullable: true),
+                amount = table.Column<decimal>(type: "numeric(10,2)", nullable: false),
+                userid = table.Column<string>(nullable: false),
+                useremail = table.Column<string>(nullable: true)
+            },
+            constraints: table =>
+            {
+                table.PrimaryKey("pk_expenses", x => new { x.date, x.description, x.amount, x.userid });
+                table.ForeignKey(
+                    name: "expenses_userid_fkey",
+                    column: x => x.userid,
+                    principalTable: "AspNetUsers",
+                    principalColumn: "Id",
+                    onDelete: ReferentialAction.Cascade
+                );
+            });
+
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -197,11 +221,17 @@ namespace CS451_Team_Project.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_expenses_userid",
+                table: "expenses",
+                column: "userid");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -222,6 +252,9 @@ namespace CS451_Team_Project.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "expenses");
         }
     }
 }

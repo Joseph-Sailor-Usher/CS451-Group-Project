@@ -1,6 +1,7 @@
 ﻿@page
 @model ErrorModel
 @{
+    Layout = null;
     ViewData["Title"] = "Error";
 }
 
@@ -9,9 +10,9 @@
 
 @if (Model.ShowRequestId)
 {
-    <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
+        <p>
+            <strong>Request ID:</strong> <code>@Model.RequestId</code>
+        </p>
 }
 
 <h3>Development Mode</h3>

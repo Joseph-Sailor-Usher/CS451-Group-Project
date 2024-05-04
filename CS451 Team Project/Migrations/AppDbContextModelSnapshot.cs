@@ -22,6 +22,7 @@ namespace CS451_Team_Project.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+
             modelBuilder.Entity("CS451_Team_Project.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -283,6 +284,8 @@ namespace CS451_Team_Project.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
+
+
 #pragma warning restore 612, 618
         }
     }

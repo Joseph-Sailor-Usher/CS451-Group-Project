@@ -19,6 +19,7 @@ namespace CS451_Team_Project.Models
 
         }
 
+        public DbSet<Transaction> Transactions { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
