@@ -21,6 +21,7 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 ## 📑 Requirement Docs
 1. **Project Plan Document**
    - Detailed breakdown of project milestones, timelines, and deliverables.
+
 ```mermaid
 gantt
     title A Gantt Diagram
@@ -29,23 +30,12 @@ gantt
 
     section Section A
     Task 1      :a1, 2024-01-01, 10d
-    Task 2      :after a1  , 20d
+    Task 2      :after a1, 20d
 
     section Section B
-    Task 3      :2024-01-02 , 12d
+    Task 3      :2024-01-02, 12d
     Task 4      :24d
 
-
-3. **Architecture**
-   - Overview of the application architecture including software and hardware requirements.
-4. **Test Documents**
-   - **Test Plan:** Strategy, scope, resources, and schedule for intended test activities.
-   - **Test Cases:** Specific instances to test whether the application meets its requirements.
-   - **Test Report:** A summary of testing activities and results.
-5. **Team Effort Estimation**
-   - Detailed estimates of time and resources required by the team to complete the project.
-6. **User Guide**
-   - Instructions on how to use the application along with FAQs and troubleshooting tips.
 
 ## 🎨 User Experience
 - Design must be accessible to all users, regardless of technical knowledge.
