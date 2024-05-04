@@ -18,25 +18,6 @@ Welcome to our repository for the Commerce Bank UMKC Project. Our ambitious goal
 - **Database:** SQL Server 2012 or above.
 - **Unit Testing:** At least 10% Code Coverage, xUnit
 
-## 📑 Requirement Docs
-1. **Project Plan Document**
-   - Detailed breakdown of project milestones, timelines, and deliverables.
-
-```mermaid
-gantt
-    title A Gantt Diagram
-    dateFormat  YYYY-MM-DD
-    excludes weekdays 2024-01-10
-
-    section Section A
-    Task 1      :a1, 2024-01-01, 10d
-    Task 2      :after a1, 20d
-
-    section Section B
-    Task 3      :2024-01-02, 12d
-    Task 4      :24d
-
-
 ## 🎨 User Experience
 - Design must be accessible to all users, regardless of technical knowledge.
 - Emphasis on readable text and proper alignment.
