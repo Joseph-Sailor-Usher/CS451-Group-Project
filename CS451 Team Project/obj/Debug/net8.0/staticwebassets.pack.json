@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets\\css\\StyleSheet.css"
     },
     {
-      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about-custom.css",
-      "PackagePath": "staticwebassets\\css\\about-custom.css"
-    },
-    {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\about.css",
       "PackagePath": "staticwebassets\\css\\about.css"
     },
@@ -33,6 +29,14 @@
       "PackagePath": "staticwebassets\\css\\newLogin.css"
     },
     {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\profilePage.css",
+      "PackagePath": "staticwebassets\\css\\profilePage.css"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\profileSettings.css",
+      "PackagePath": "staticwebassets\\css\\profileSettings.css"
+    },
+    {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
     },
@@ -47,6 +51,14 @@
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\Budget.png",
       "PackagePath": "staticwebassets\\images\\Budget.png"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\budgetChart.png",
+      "PackagePath": "staticwebassets\\images\\budgetChart.png"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\debtChart.png",
+      "PackagePath": "staticwebassets\\images\\debtChart.png"
     },
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\images\\finance.png",
@@ -85,8 +97,16 @@
       "PackagePath": "staticwebassets\\js\\openai-interface.js"
     },
     {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\profileSettings.js",
+      "PackagePath": "staticwebassets\\js\\profileSettings.js"
+    },
+    {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\static-tips.js",
+      "PackagePath": "staticwebassets\\js\\static-tips.js"
     },
     {
       "Id": "C:\\Users\\Kevin Membreno\\Documents\\GitHub\\CS451-Group-Project\\CS451 Team Project\\wwwroot\\js\\tips.js",

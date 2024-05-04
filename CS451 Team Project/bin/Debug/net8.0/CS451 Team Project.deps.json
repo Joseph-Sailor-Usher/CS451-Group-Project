@@ -11,6 +11,7 @@
           "DocumentFormat.OpenXml": "3.0.2",
           "GoogleAuthenticator": "3.2.0",
           "MailKit": "4.4.0",
+          "Makeshift.Web.DataVisualization.Core": "0.0.2",
           "Microsoft.AspNetCore.Authentication.Google": "8.0.3",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",
           "Microsoft.AspNetCore.Identity.UI": "8.0.2",
@@ -673,6 +674,17 @@
           "lib/net8.0/MailKit.dll": {
             "assemblyVersion": "4.4.0.0",
             "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "Makeshift.Web.DataVisualization.Core/0.0.2": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/Makeshift.Web.DataVisualization.Core.dll": {
+            "assemblyVersion": "0.0.2.0",
+            "fileVersion": "0.0.2.0"
           }
         }
       },
@@ -2745,6 +2757,13 @@
       "sha512": "sha512-cv+oiAOn2+LhhGUVvxpJjEOIZOTZBFDIDO9ebOfxqqU1f/PllHpKr5VjWOBsqeLrb+zLisxWSQDzM5C64XrRNA==",
       "path": "mailkit/4.4.0",
       "hashPath": "mailkit.4.4.0.nupkg.sha512"
+    },
+    "Makeshift.Web.DataVisualization.Core/0.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YUSALUDzVs/ooZH82mXxIW6/2Godt5ZLkK+oEhD0Aj0wW4C+PUKxgsPtvTvw0p4ncN86auYH23XE1QqosXGrMg==",
+      "path": "makeshift.web.datavisualization.core/0.0.2",
+      "hashPath": "makeshift.web.datavisualization.core.0.0.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Google/8.0.3": {
       "type": "package",

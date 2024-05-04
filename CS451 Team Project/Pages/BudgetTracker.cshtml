@@ -20,84 +20,64 @@
 
 <body>
 
-<main class="main">
-<section class="charts_container">
-    <div class="container ">
-        <div class="card-group">
-            <div class="col-md-12 col-lg-5">
-                <div class="budget_card card">
-                    <div id="carouselFinacialTips" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <canvas id="myPieChart"></canvas>
-                                <div class="card-body">
-                                    <h5 class="card-title budget_title">Budget Chart</h5>
+    <main class="main">
+        <div class="container d-flex justify-content-center">
+            <section class="charts_transactions_container">
+                <div class="col-md-12 col-lg-5" style="width: 500px">
+                    <div class="budget_card card">
+                        <!-- Chart content -->
+                        <div id="carouselFinacialTips" class="carousel slide">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <!-- Placeholder for the chart -->
+@*                                     <div class="carousel-item active">
+                                        <canvas id="myPieChart"></canvas>
+                                        <div class="card-body">
+                                            <h5 class="card-title budget_title">Budget Chart</h5>
+                                        </div>
+                                    </div> *@
+                                  <div id="budgetChartContainer" class="chart-container">
+                                        <img id="budgetChart" src="~/images/budgetChart.png" alt="Budget Chart" />
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title budget_title">Budget Chart</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item item">
+  @*                                   <canvas id="debtPieChart"></canvas>
+                                    <div class="card-body">
+                                        <h5 class="card-title budget_title">Debt Chart</h5>
+                                    </div> *@
+                                    <div id="budgetChartContainer" class="chart-container">
+                                        <img id="budgetChart" src="~/images/debtChart.png" alt="Budget Chart" />
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title budget_title">Debt Chart</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item item">
-                                <canvas id="debtPieChart"></canvas>
-                                <div class="card-body">
-                                    <h5 class="card-title budget_title">Debt Chart</h5>
-                                </div>
-                            </div>
-                            <!-- formatting for this is weird 
-                             <div class="carousel-item item">
-                                <canvas id="myLinesChart"></canvas>
-                                <div class="card-body">
-                                    <h5 class="card-title">Investment Tracker</h5>
-                                </div>
-                            </div>-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
-            </div>
-
-            <!--
-                <div class="container">
-                    <div class="card-group">
-                        <div class="col-md-5 col-lg-4">
-                            <div class="col me-3">
-                                <div class="card">
-                                    <canvas id="myPieChart"></canvas>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Budget Chart</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col me-3">
-                                <div class="card">
-                                    <canvas id="debtPieChart"></canvas>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Debt Chart</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-lg-8">
-                            <div class="card">
-                                <canvas id="myLineChart"></canvas>
-                                <div class="card-body">
-                                    <h5 class="card-title">Investment Tracker</h5>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-
+            </section>
+            <div class="container d-flex justify-content-center" style="margin-top: -1.49rem">
+            <section class="charts_transactions_container">
+                <div class="col-md-12 col-lg-5" style="width: 1000px">
                     <div class="transaction_card card my-4">
-                        <div class="card-body">
+                        <!-- Transaction content -->
+                        <div class="card-body transaction_card_body">
                             <h5 class="card-title">Transactions</h5>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="transactionSearch" placeholder="Search transactions...">
                             </div>
-
                             <!-- Transaction form -->
                             <form method="post" id="transactionForm">
                                 <div class="row">
@@ -112,10 +92,32 @@
                                         <input type="text" class="form-control" id="transactionDescription" name="TransactionInput.Description" required>
                                     </div>
                                     <!-- Category input -->
-                                    <div class="col-md-3 mb-3">
-                                        <label for="transactionCategory" class="form-label">Category</label>
-                                        <input type="text" class="form-control" id="transactionCategory" name="TransactionInput.Category" required>
-                                    </div>
+                                   <div class="col-md-3 mb-3">
+                                       <label for="transactionCategory" class="form-label">Category</label>
+                                       <select class="form-select" id="transactionCategory" name="TransactionInput.Category" required>
+                                           <option value="" disabled selected>Select a category</option>
+                                           <option value="Mortgage">Mortgage</option>
+                                           <option value="Utilities">Utilities</option>
+                                           <option value="Groceries">Groceries</option>
+                                           <option value="Misc">Misc</option>
+                                           <option value="Savings">Savings</option>
+                                           <option value="Investing">Investing</option>
+                                           <option value="Rent">Rent</option>
+                                           <option value="Auto Loan">Auto Loan</option>
+                                           <option value="Student Loan">Student Loan</option>
+                                           <option value="Credit Card">Credit Card</option>
+                                           <option value="Bills">Bills</option>
+                                           <option value="Transportation">Transportation</option>
+                                           <option value="Insurance">Insurance</option>
+                                           <option value="Entertainment">Entertatinment</option>
+                                           <option value="Personal Loan">Personal Loan</option>
+                                           <option value="Medical Debt">Medical Debt</option>
+                                           <option value="Business Loan">Business Loan</option>
+                                           <option value="Tax Debt">Tax Debt</option>
+                                           <option value="Loan">Loan</option>
+                                           <option value="Other">Other</option>
+                                       </select>
+                                   </div>
                                     <!-- Amount input -->
                                     <div class="col-md-3 mb-3">
                                         <label for="transactionAmount" class="form-label">Amount</label>
@@ -125,13 +127,11 @@
                                 <!-- Submit button -->
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <button type="submit" class="btn btn-primary w-100">Add Transaction</button>
+                                        <input type="hidden" name="transactionId" value="add" />
+                                        <button type="submit" name="action" value="add" class="btn btn-primary w-100">Add Transaction</button>
                                     </div>
                                 </div>
                             </form>
-
-
-
                             <div class="table-responsive-sm" style="max-height:500px; overflow-x:hidden;">
                                 <table class="table table-striped">
                                     <thead>
@@ -146,12 +146,18 @@
                                     <tbody>
                                         @foreach (var transaction in Model.Transactions)
                                         {
-                                            <tr id="'@transaction.TransactionID'">
+                                            <tr id="@transaction.UniqueTransactionID">
                                                 <td>@transaction.Date.ToString("MM-dd-yyyy")</td>
                                                 <td>@transaction.Description</td>
                                                 <td>@transaction.Category</td>
                                                 <td>@transaction.Amount.ToString("C")</td>
-                                                <td><button type="button" class="btn btn-danger" onclick="removeTransaction('@transaction.TransactionID')">X</button></td>
+                                                <td>
+                                                    <form method="post">
+                                                        <input type="hidden" name="transactionId" value="@transaction.UniqueTransactionID" />
+                                                        <!-- Submit button with a distinct name for removing -->
+                                                        <button type="submit" name="action" value="remove" class="btn btn-danger">X</button>
+                                                    </form>
+                                                </td>
                                             </tr>
                                         }
                                     </tbody>
@@ -159,12 +165,13 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-</main>
-
+        </div>
+            </section>
+        </div>
+    </main>
 
     <script src="~/js/toggle-colors.js"></script>
     <script src="~/js/chart-info.js"></script>

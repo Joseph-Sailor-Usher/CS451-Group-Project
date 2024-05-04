@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[4.4.0, )"
             },
+            "Makeshift.Web.DataVisualization.Core": {
+              "target": "Package",
+              "version": "[0.0.2, )"
+            },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[8.0.3, )"

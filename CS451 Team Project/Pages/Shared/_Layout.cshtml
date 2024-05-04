@@ -36,7 +36,7 @@
                     </li>
 
                     <li class="nav_item">
-                        <a asp-page="ProfilePage" class="nav_link">
+                        <a asp-page="ProfilePage" class="nav_link" asp-route-token="@Model.token" asp-route-email="@Model.email">
                             Profile
                         </a>
                     </li>

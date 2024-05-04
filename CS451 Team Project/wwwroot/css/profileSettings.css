@@ -1,0 +1,63 @@
+﻿
+.icon_color {
+     margin-bottom: 2rem;
+}
+
+.icon_card {
+     text-align: center;
+     background-color: var(--secondary-bg-color);
+     padding: 1rem;
+     border-radius: 1rem;
+     border: 2px solid var(--secondary-bg-color);
+     transition: border .4s;
+     flex: 1;
+     margin: 0 0.5rem;
+     cursor: pointer;
+}
+
+.profile_icon {
+     display: block;
+     font-size: 6rem;
+     color: var(--first-color);
+     margin-bottom: .75rem;
+}
+
+.icon_title {
+     font-size: var(--h2-font-size);
+     font-weight: var(--font-semi-bold);
+     margin-bottom: 1.5rem;
+}
+
+.icon_card:hover {
+     border: 2px solid var(--first-color);
+}
+
+.icon_grid {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.red {
+     color: red;
+}
+
+.orange {
+     color: orange;
+}
+
+.yellow {
+     color: yellow;
+}
+
+.green {
+     color: green;
+}
+
+.blue {
+     color: blue;
+}
+
+.purple {
+     color: purple;
+}

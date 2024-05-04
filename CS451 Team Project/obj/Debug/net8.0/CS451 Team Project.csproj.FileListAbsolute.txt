@@ -1101,3 +1101,5 @@ C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\
 C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\BouncyCastle.Crypto.dll
 C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\itextsharp.dll
 C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\bin\Debug\net8.0\Makeshift.Web.DataVisualization.Core.dll
+C:\Users\Kevin Membreno\Documents\GitHub\CS451-Group-Project\CS451 Team Project\obj\Debug\net8.0\CS451 Team Project.csproj.ResolveComReference.cache

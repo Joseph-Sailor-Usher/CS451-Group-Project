@@ -5,6 +5,119 @@
 
 /* VARIABLES */
 
+/* CSS Styling Adjustment */
+.charts_transactions_container {
+     margin-top: 2rem; /* Adjust margin as needed */
+}
+
+     .charts_transactions_container .container {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; /* Align items at the start of the flex container */
+     }
+
+     .charts_transactions_container .col-md-12 {
+          flex: 1; /* Make each column occupy equal space */
+          margin: 0 1rem; /* Adjust margin as needed */
+     }
+
+
+.card-group {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+}
+
+/* Budget Chart */
+.budget_card {
+     padding: 1rem;
+     background-color: var(--secondary-bg-color);
+     width: 100%; /* Adjust the width to fill the container */
+}
+
+     .budget_card:hover {
+          border: 2px solid var(--first-color);
+          box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+          cursor: pointer;
+     }
+
+     .budget_card .card-body {
+          text-align: center;
+          padding: 1rem;
+     }
+
+     .budget_card .budget_title {
+          padding-top: 3.5rem;
+     }
+
+/* Transactions */
+.transaction_card {
+     padding: 1rem;
+     background-color: var(--secondary-bg-color);
+     width: 100%; /* Adjust the width as needed */
+     margin-left: auto; /* Center the card horizontally */
+     margin-right: auto;
+}
+
+     .transaction_card:hover {
+          border: 2px solid var(--first-color);
+          box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
+          cursor: pointer;
+     }
+
+     .transaction_card .card-body {
+          text-align: center;
+          padding: 1rem;
+     }
+
+/* Transaction Form */
+#transactionForm {
+     margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+/* Transaction Table */
+.table-responsive-sm {
+     max-height: 500px;
+     overflow-x: hidden;
+}
+
+.table-striped tbody tr {
+     border-bottom: 1px solid var(--text-color); /* Add bottom border to separate rows */
+}
+
+/* Transaction Search */
+#transactionSearch {
+     margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+/* Transaction Table */
+.table-striped {
+     margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+     /* Transaction Table Header */
+     .table-striped th {
+          color: var(--title-color);
+          font-weight: var(--font-medium);
+     }
+
+     /* Transaction Table Rows */
+     .table-striped td {
+          color: var(--text-color);
+     }
+
+     /* Transaction Delete Button */
+     .table-striped .btn-danger {
+          color: var(--title-color);
+          background-color: var(--first-color);
+          border: none;
+     }
+
+          .table-striped .btn-danger:hover {
+               background-color: var(--first-color-alt);
+          }
+
+
 /* Custom CSS for Bootstrap dark theme */
 [data-bs-theme='dark'] {
      --title-color: hsl(228, 8%, 95%) !important;
@@ -73,6 +186,7 @@
      }
 }
 
+
 /* BASE */
 * {
      box-sizing: border-box;
@@ -123,22 +237,11 @@ img {
 }
 
 /* CLASSES */
-.container {
-     max-width: 1120px;
-     margin-inline: 1.5rem;
-}
-
-.grid {
-     display: grid;
-     gap: 1.5rem;
-     grid-template-columns: repeat(2, 600px);
-}
 
 .main {
      overflow: hidden;
      padding-top: calc(var(--header-height) + 2rem);
 }
-
 
 .button {
      display: inline-block;
@@ -259,35 +362,6 @@ img {
           left: 0;
           z-index: -1;
      }
-
-/* CHARTS */
-
-.card {
-     margin: .75rem;
-     padding: 1rem;
-     background-color: var(--secondary-bg-color);
-}
-
-     .card:hover {
-          border: 2px solid var(--first-color);
-          box-shadow: 0 8px 24px hsla(var(--hue), 100%, 40%, .25);
-          cursor: pointer;
-     }
-
-.card-body {
-
-     text-align: center;
-     padding: 1rem;
-}
-
-.budget_card {
-     height: 665px;
-     padding-top: 3rem;
-}
-
-.budget_title {
-     padding-top: 3.5rem;
-}
 
 /* FOOTER */
 .footer {

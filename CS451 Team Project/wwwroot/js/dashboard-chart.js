@@ -1,27 +1,4 @@
 ﻿// Function to create the budget tracking pie chart
-function createBudgetPieChart() {
-     var ctxP = document.getElementById('myPieChart').getContext('2d');
-     window.myPieChart = new Chart(ctxP, {
-          type: 'pie',
-          data: {
-               labels: ["Rent/Mortgage", "Utilities", "Groceries", "Misc", "Savings", "Investing"],
-               datasets: [{
-                    data: [800, 150, 300, 150, 200, 100],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#FFA07A"],
-                    hoverOffset: 4
-               }]
-          },
-          options: {
-               plugins: {
-                    legend: {
-                         labels: {
-                              color: getThemeColor()
-                         }
-                    }
-               }
-          }
-     });
-}
 
 // Function to create the actual amount spent line chart
 function createSpendingLineChart() {
@@ -75,17 +52,14 @@ function getThemeColor() {
      return localStorage.getItem('theme') === 'light' ? "black" : "white";
 }
 
-// Call the functions to create the charts
-createBudgetPieChart();
 createSpendingLineChart();
+
 function updateChartsForCurrentTheme() {
-     if (window.myPieChart && typeof window.myPieChart.destroy === 'function') {
-          window.myPieChart.destroy();
-     }
+
      if (window.myLineChart && typeof window.myLineChart.destroy === 'function') {
           window.myLineChart.destroy();
      }
 
-     createBudgetPieChart(); // Recreates the pie chart
+
      createSpendingLineChart(); // Recreates the line chart
 }

@@ -2,6 +2,7 @@ using CS451_Team_Project.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace CS451_Team_Project.Pages
 {
@@ -14,10 +15,13 @@ namespace CS451_Team_Project.Pages
         [FromRoute]
         public string token { get; set; }
 
+
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<NewLoginModel> _logger;
 
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public DashboardModel(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, ILogger<NewLoginModel> logger)
         {
             _signInManager = signInManager;
@@ -48,8 +52,9 @@ namespace CS451_Team_Project.Pages
                 {
                     // Proceed with your logic using the user and token
                     // For example, update the user's last login time, or perform any other action
-                    _logger.LogWarning(decryptedEmail);
-                    _logger.LogWarning($"WORKS!!!!!!!!!!!!!!!!!!!");
+                    FirstName = user.FirstName; // Assuming these properties exist in your user model
+                    LastName = user.LastName;
+
                     return Page(); // Return the Dashboard page
                 }
                 else

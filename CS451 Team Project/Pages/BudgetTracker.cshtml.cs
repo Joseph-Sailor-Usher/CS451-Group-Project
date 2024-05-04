@@ -1,24 +1,18 @@
 using CS451_Team_Project.Models;
+using DocumentFormat.OpenXml.Office2013.Drawing.ChartStyle;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using DocumentFormat.OpenXml.Spreadsheet;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.WebUtilities;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Encodings.Web;
-using System.Text;
-using System.Net;
+using System.IO;
+using System.Web.UI.DataVisualization.Charting;
 
 namespace CS451_Team_Project.Pages
 {
-    public class BudgetTrackerModel : PageModel
+    public class BudgetTrackerModel : PageModel 
     {
         [FromQuery]
         [FromRoute]
@@ -51,6 +45,7 @@ namespace CS451_Team_Project.Pages
             public string Category { get; set; }
             [Required]
             public decimal Amount { get; set; }
+
         }
 
         public BudgetTrackerModel(AppDbContext dbContext, SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, ILogger<NewLoginModel> logger)
@@ -63,32 +58,45 @@ namespace CS451_Team_Project.Pages
         }
         // Other methods...
 
-        public async Task<IActionResult> OnPost([FromServices] AppDbContext db, [FromQuery] string token, [FromQuery] string email)
+        public async Task<IActionResult> OnPost([FromServices] AppDbContext db, [FromQuery] string token, [FromQuery] string email, string action, string transactionId)
         {
-
             string decryptedEmail = EncryptionHelper.Decrypt(email);
-            // Get the current user
             var user = db.Users.FirstOrDefault(u => u.Email == decryptedEmail);
-            _logger.LogWarning($"Invalid login attempt for user: {TransactionInput.Date}");
-            _logger.LogWarning($"Invalid login attempt for user: {TransactionInput.Description}");
-            _logger.LogWarning($"Invalid login attempt for user: {TransactionInput.Category}");
-            _logger.LogWarning($"Invalid login attempt for user: {TransactionInput.Amount}");
-            _logger.LogWarning($"Invalid login attempt for user: {user.Id}");
-            _logger.LogWarning($"Invalid login attempt for user: {user.Email}");
-            if (!ModelState.IsValid)
+
+            if (action == "add")
             {
-                _logger.LogWarning($"something wrong");
-                return Page(); // Return the page if model state is not valid
+                _logger.LogWarning($"add");
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning($"something wrong");
+                    return Page(); // Return the page if model state is not valid
+                }
+
+                // Create a new Transaction object
+                var transaction = CreateTransaction();
+
+                db.Transactions.Add(transaction);
+                await db.SaveChangesAsync();
+
+                return RedirectToPage("BudgetTracker", new { token = token, email = email });
             }
+            else if (action == "remove")
+            {
+                _logger.LogWarning($"remove");
+                // Remove the transaction
+                var transactionToRemove = db.Transactions.FirstOrDefault(t => t.UniqueTransactionID == transactionId);
 
-            // Create a new Transaction object
-            var transaction = CreateTransaction();
-
-            db.Transactions.Add(transaction);
-            await db.SaveChangesAsync();
-
+                if (transactionToRemove != null)
+                {
+                    db.Transactions.Remove(transactionToRemove);
+                    await db.SaveChangesAsync();
+                }
+                return RedirectToPage("BudgetTracker", new { token = token, email = email });
+            }
+            _logger.LogWarning($"not called");
             return RedirectToPage("BudgetTracker", new { token = token, email = email });
         }
+
 
         private Transaction CreateTransaction()
         {
@@ -116,83 +124,43 @@ namespace CS451_Team_Project.Pages
             }
         }
 
-        public async Task<IActionResult> OnPostRemoveTransactionAsync([FromServices] AppDbContext db, string transactionId)
-        {
-            try
-            {
-                // Find the transaction in the database
-                var transaction = await db.Transactions.FindAsync(transactionId);
 
-                // If the transaction exists, remove it from the database
-                if (transaction != null)
-                {
-                    db.Transactions.Remove(transaction);
-                    await db.SaveChangesAsync();
-                }
-                else
-                {
-                    // Transaction not found in the database
-                    return NotFound();
-                }
-
-                // Return a success response
-                return new JsonResult(new { success = true });
-            }
-            catch (Exception ex)
-            {
-                // Log the exception
-                _logger.LogError(ex, "Error occurred while removing the transaction.");
-
-                // Return an error response
-                return new JsonResult(new { success = false, error = ex.Message });
-            }
-        }
-
-
-        public async Task<IActionResult> OnGet([FromServices] AppDbContext db, [FromQuery] string token, [FromQuery] string email)
+        public async Task<IActionResult> OnGetAsync([FromServices] AppDbContext db, [FromQuery] string token, [FromQuery] string email)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
             {
-                // Handle the case where email or token is missing in the URL query parameters
-                // You may want to redirect to an error page or show a message
                 return RedirectToPage("/Error");
             }
 
             string decryptedEmail = EncryptionHelper.Decrypt(email);
 
-            // Validate the token
-            if (ValidateTokenForDashboard(decryptedEmail, token))
+            if (!ValidateTokenForDashboard(decryptedEmail, token))
             {
-                // Token is valid, proceed with your logic
-
-                // For demonstration, let's assume we're fetching the user from the database
-                var user = db.Users.FirstOrDefault(u => u.Email == decryptedEmail);
-
-                if (user != null)
-                {
-                    // Proceed with your logic using the user and token
-                    // For example, update the user's last login time, or perform any other action
-                    _logger.LogWarning(decryptedEmail);
-                    _logger.LogWarning($"WORKS!!!!!!!!!!!!!!!!!!!");
-                    Transactions = await db.Transactions
-                        .Where(t => t.UserId == user.Id)
-                        .ToListAsync();
-                    return Page();
-                }
-                else
-                {
-                    // Handle the case where the user is not found in the database
-                    return RedirectToPage("/Error");
-                }
-
-            }
-            else
-            {
-                // Token is invalid, handle accordingly
-                // You may want to redirect to an error page or show a message
                 return RedirectToPage("/Error");
             }
+
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == decryptedEmail);
+            if (user == null)
+            {
+                return RedirectToPage("/Error");
+            }
+
+            _logger.LogWarning(decryptedEmail);
+            _logger.LogWarning("WORKS!!!!!!!!!!!!!!!!!!!");
+
+            // Asynchronously generate the chart
+            Charts chart = new Charts(_logger);
+            await chart.GenerateBudgetPieChartAsync(_dbContext, decryptedEmail);
+            Charts chart2 = new Charts(_logger);
+            await chart2.GenerateSecondBudgetPieChartAsync(_dbContext, decryptedEmail);
+
+            Transactions = await _dbContext.Transactions
+                .Where(t => t.UserId == user.Id)
+                .ToListAsync();
+
+            return Page();
         }
+
 
         private bool ValidateTokenForDashboard(string email, string token)
         {

@@ -1,11 +1,11 @@
-﻿@page 
+﻿@page
 @model DashboardModel
 @{
     Layout = Layout;
 }
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
@@ -15,33 +15,45 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="~/css/custom.css">
     <link rel="stylesheet" href="~/css/dashboard.css">
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- Main -->
     <main class="main">
-
-
         <section class="charts_container">
             <div class="container">
                 <div class="card-group">
 
                     <!-- profile/pie chart -->
                     <div class="col-md-5 col-lg-4">
+                        <!-- Profile Card -->
+                        <!-- need to update with dynamic information-->
+                        <a class="card mb-4" asp-page="ProfilePage" asp-route-token="@Model.token" asp-route-email="@Model.email">
+                            <div class="card-body text-center">
+                                <img src="~/images/ProfilePic.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                                <h5 class="my-3">@Model.FirstName @Model.LastName</h5>
+                                <p class="text-muted mb-1">Full Stack Developer</p>
+                                <p class="text-muted mb-4">Kansas City, MO</p>
+                            </div>
+                        </a>
+
+                        <!-- Pie Chart-->
                         <div class="col">
-                            <a class="card pie_chart" asp-page="BudgetTracker">
+                            <a class="card pie_chart" asp-page="BudgetTracker" asp-route-token="@Model.token" asp-route-email="@Model.email">
                                 <div class="card-body">
                                     <h5 class="card-title">Budget Tracker</h5>
                                     <p class="card-text">Monthly Pie Charts</p>
+                                    <img id="budgetChart" src="~/images/budgetChart.png" alt="Budget Chart" />
                                 </div>
-                                <canvas class="pie_canvas" id="myPieChart"></canvas>
                             </a>
                         </div>
                     </div>
 
-                        <!-- line chart -->
+
+                    <!-- line chart/financial tips -->
                     <div class="col-md-7 col-lg-8">
+                        <!-- Line chart -->
                         <div class="card line_chart">
                             <div class="card-body">
                                 <h5 class="card-title">Tracker Your Annual Spending</h5>
@@ -49,65 +61,64 @@
                             </div>
                             <canvas id="myLineChart"></canvas>
                         </div>
-                     </div>
 
                         <!-- financial tips -->
                         <div class="col">
-                                <a class="card financial_tips" asp-page="">
+                            <a class="card financial_tips" asp-page="Tips" asp-route-token="@Model.token" asp-route-email="@Model.email">
 
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                    </button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
 
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                    </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselFinacialTips" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
 
-                                    <div class="card-body">
-                                        <div class="card-title">Financial Tips</div>
-                                    </div>
+                                <div class="card-body">
+                                    <div class="card-title">Financial Tips</div>
+                                </div>
 
-                                    <div id="carouselFinacialTips" class="carousel slide">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <div class="financial_title">
-                                                    Create a Budget
-                                                </div>
-                                                <div class="financial_description">
-                                                    Establishing a budget is crucial for managing your finances effectively. 
-                                                    Track your income and expenses to understand where your money is going.
-                                                </div>
+                                <div id="carouselFinacialTips" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="financial_title">
+                                                Create a Budget
                                             </div>
-                                            <div class="carousel-item item">
-                                                <div class="financial_title">
-                                                    Pay Yourself First
-                                                </div>
-                                                <div class="financial_description">
-                                                    Prioritize saving by treating it like any other bill. Set up automatic transfers
-                                                    from your paycheck to your savings or investment accounts.
-                                                </div>
+                                            <div class="financial_description">
+                                                Establishing a budget is crucial for managing your finances effectively.
+                                                Track your income and expenses to understand where your money is going.
                                             </div>
-                                            <div class="carousel-item item">
-                                                <div class="financial_title">
-                                                    Build an Emergency Fund
-                                                </div>
-                                                <div class="financial_description">
-                                                    Set aside money regularly for unexpected expenses or emergencies. Even saving a small 
-                                                    amount each month can add up over time and provide a financial safety net when needed.
-                                                </div>
+                                        </div>
+                                        <div class="carousel-item item">
+                                            <div class="financial_title">
+                                                Pay Yourself First
+                                            </div>
+                                            <div class="financial_description">
+                                                Prioritize saving by treating it like any other bill. Set up automatic transfers
+                                                from your paycheck to your savings or investment accounts.
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item">
+                                            <div class="financial_title">
+                                                Build an Emergency Fund
+                                            </div>
+                                            <div class="financial_description">
+                                                Set aside money regularly for unexpected expenses or emergencies. Even saving a small
+                                                amount each month can add up over time and provide a financial safety net when needed.
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
-
 
     <script src="~/js/toggle-colors.js"></script>
     <script src="~/js/dashboard-chart.js"></script>

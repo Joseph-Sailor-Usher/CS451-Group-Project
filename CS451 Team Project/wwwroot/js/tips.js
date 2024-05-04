@@ -39,3 +39,89 @@
 //          <div class="financial_description">${data.tip}</div>
 //     </div>
 //</div>
+
+// Dynamic pie chart
+// need to link to backend 
+function createDynamicPieChart() {
+     var dynamicChart = document.getElementById('dynamicRatioPieChart').getContext('2d');
+
+     window.dynamicRatioPieChart = new Chart(dynamicChart, {
+          type: 'pie',
+          data: {
+               labels: ["Needs", "Wants", "Savings"],
+               datasets: [{
+                    data: [50, 30, 20],
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+                    hoverOffset: 4
+               }]
+          },
+          options: {
+               plugins: {
+                    legend: {
+                         labels: {
+                              color: getThemeColor()
+                         }
+                    }
+               }
+          }
+     });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+     createDynamicPieChart();
+     createStaticPieChart(); // Recreates the pie chart
+});
+
+//Static pie chart for financial tips 
+function createStaticPieChart() {
+     var staticChart = document.getElementById('staticRatioPieChart').getContext('2d');
+
+     window.staticRatioPieChart = new Chart(staticChart, {
+          type: 'pie',
+          data: {
+               labels: ["Needs", "Wants", "Savings"],
+               datasets: [{
+                    data: [50, 30, 20],
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+                    hoverOffset: 4
+               }]
+          },
+          options: {
+               plugins: {
+                    legend: {
+                         labels: {
+                              color: getThemeColor()
+                         }
+                    }
+               }
+          }
+     });
+}
+document.addEventListener('DOMContentLoaded', function () {
+     createStaticPieChart(); // Recreates the pie chart
+});
+
+function updateChartsForCurrentTheme() {
+     if (window.staticRatioPieChart && typeof window.staticRatioPieChart.destroy === 'function') {
+          window.staticRatioPieChart.destroy();
+     }
+
+     createDynamicPieChart();
+}
+
+// Helper function to get the theme color for chart labels and grid lines
+function getThemeColor() {
+     return localStorage.getItem('theme') === 'light' ? "black" : "white";
+}
+
+function updateChartsForCurrentTheme() {
+     if (window.staticRatioPieChart && typeof window.staticRatioPieChart.destroy === 'function') {
+          window.staticRatioPieChart.destroy();
+     }
+     if (window.dynamicRatioPieChart && typeof window.dynamicRatioPieChart.destroy === 'function') {
+          window.dynamicRatioPieChart.destroy();
+     }
+
+     createStaticPieChart(); // Recreates the pie chart
+     createDynamicPieChart();
+}

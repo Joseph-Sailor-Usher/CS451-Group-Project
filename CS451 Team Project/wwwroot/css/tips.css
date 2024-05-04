@@ -140,7 +140,7 @@ img {
 /* CLASSES */
 .container {
      max-width: auto;
-     max-height:auto;
+     max-height: auto;
      margin-inline: 1.5rem;
 }
 
@@ -292,15 +292,16 @@ img {
 
 .card-body {
      text-align: center;
+     align-items: center;
      padding: 1rem;
 }
 
 .pie_canvas {
-     padding-bottom: .5rem;
+     margin-bottom: 3rem;
 }
 
 .pie_chart {
-     height: 455px;
+     height: 655px;
 }
 
 .carousel-inner {

@@ -1,18 +1,23 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
-// Write your JavaScript code.
+// Debt: "Mortgage", "Auto Loan", "Student Loan", "Credit Card", "Loan", "Personal Loan", "Medical Debt", "Business Loan", "Tax Debt"
+// Expenses: "Utilities", "Groceries", "Misc", "Savings", "Investing", "Rent", "Bills", "Transportation", "Insurance", "Entertainment", "Other"
 
 function createBudgetPieChart() {
 
+     var expenseLabels = ["Utilities", "Groceries", "Misc", "Savings", "Investing", "Rent", "Bills", "Transportation", "Insurance", "Entertainment", "Other"];
+     var expenseData = [80, 150, 300, 150, 200, 100];
+     var expenseBackgroundColor = ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#FFA07A"];
+
      var ctxP = document.getElementById('myPieChart').getContext('2d');
-     window.myPieChart = new Chart(ctxP, {
+     window.expensePieChart = new Chart(ctxP, {
           type: 'pie',
           data: {
-               labels: ["Rent/Mortgage", "Utilities", "Groceries", "Misc", "Savings", "Investing"],
+               labels: expenseLabels,
                datasets: [{
-                    data: [800, 150, 300, 150, 200, 100],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360", "#FFA07A"],
+                    data: expenseData,
+                    backgroundColor: expenseBackgroundColor,
                     borderColor: "white",
                }]
           },
@@ -105,9 +110,6 @@ function getThemeColor() {
 }
 
 // Call the functions to create the charts
-createBudgetPieChart();
-createDebtPieChart();
-createSpendingLineChart();
 
 function updateChartsForCurrentTheme() {
      if (window.myPieChart && typeof window.myPieChart.destroy === 'function') {

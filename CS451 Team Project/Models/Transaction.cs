@@ -11,7 +11,6 @@ namespace CS451_Team_Project.Models
 
         [Key]
         public int TransactionID { get; set; } // Define a primary key
-
         public DateTime Date { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
